@@ -8,10 +8,10 @@ import React from "react";
         <h1 className="title">{title.toUpperCase()}</h1>
         <div className="preview">
             {items
-            .filter((item, idx < 4)
+            .filter((item, idx) => idx <4) 
             .map(({id, ...otherItemProps}) => (
                 <CollectionItem key={id}{...otherItemProps}/>
-            )))}
+            ))}
         </div>
     </div>
  );
